@@ -5,13 +5,18 @@
 //    stale-while-revalidate. New entries named by a fresh index are fetched
 //    in the background so the day is available offline.
 //  - Google Fonts: cached opportunistically so reading works offline.
+//  - The pinned supabase-js module and what it imports (cdn.jsdelivr.net/npm/...):
+//    cached on first load, cache-first, so a signed-in app still starts offline.
+//  - Requests to the Supabase project (or any other origin) are never touched:
+//    they fall straight through to the network.
 // Bump VERSION whenever the shell files change.
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL = `vad-shell-${VERSION}`;
 const ENTRIES = `vad-entries-${VERSION}`;
 const FONTS = `vad-fonts-${VERSION}`;
-const KEEP = [SHELL, ENTRIES, FONTS];
+const LIB = `vad-lib-${VERSION}`;
+const KEEP = [SHELL, ENTRIES, FONTS, LIB];
 
 const scope = new URL('./', self.registration.scope);
 const abs = (p) => new URL(p, scope).href;
@@ -41,6 +46,12 @@ const SHELL_FILES = [
   'js/view-states.js',
   'js/lookup.js',
   'js/settings-ui.js',
+  'js/config.js',
+  'js/device.js',
+  'js/remote.js',
+  'js/sync.js',
+  'js/sync-app.js',
+  'js/sync-ui.js',
 ].map(abs);
 
 const INDEX_URL = abs('entries/index.json');
@@ -113,6 +124,15 @@ async function staleWhileRevalidate(request, cacheName, { onFresh, ignoreSearch 
   return (await network) || Response.error();
 }
 
+async function cacheFirst(request, cacheName) {
+  const cache = await caches.open(cacheName);
+  const hit = await cache.match(request);
+  if (hit) return hit;
+  const res = await fetch(request); // a network failure rejects, like any uncached request would
+  if (res && res.ok) await cache.put(request, res.clone());
+  return res;
+}
+
 self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;
@@ -122,6 +142,12 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(staleWhileRevalidate(req, FONTS));
     return;
   }
+  // The pinned library only: versions are immutable, so cache-first is safe.
+  if (url.hostname === 'cdn.jsdelivr.net' && url.pathname.startsWith('/npm/')) {
+    event.respondWith(cacheFirst(req, LIB));
+    return;
+  }
+  // Everything else cross-origin (including the Supabase project) is not ours to intercept.
   if (url.origin !== location.origin) return;
 
   if (isEntry(url)) {

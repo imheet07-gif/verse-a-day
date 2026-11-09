@@ -2,6 +2,8 @@
 import { el, debounce, fmtTime, wordCount, typeOf, fmt } from './util.js';
 import { icon } from './icons.js';
 import { JournalStore } from './store-journal.js';
+import { engine } from './sync-app.js';
+import { journalSyncLine } from './sync-ui.js';
 
 const FALLBACK_PROMPTS = ['What stayed with you from this?', 'What would you say back?'];
 const INERT_WHILE_FOCUS = '#masthead, #weekstrip, #rail, #toolbar, .piece-col';
@@ -100,6 +102,38 @@ export function renderJournal(entry, { onSaved } = {}) {
     save();
   });
 
+  // "Typing": text not yet saved, or the box is focused and was typed in during the last 10 seconds.
+  // A box that merely has the cursor in it, untouched, can be updated in place; one being written in never is.
+  let lastInputAt = 0;
+  const inUse = () => ta.value !== last || (document.activeElement === ta && Date.now() - lastInputAt < 10000);
+  ta.addEventListener('input', () => (lastInputAt = Date.now()));
+
+  /* ---- sync hooks: the engine may flush this box, and may hand it newer text ---- */
+  const syncLine = journalSyncLine(date);
+  const unregister = engine.registerEditor(date, {
+    busy: inUse,
+    // write whatever is in the box to the device right now, synchronously
+    flush: () => {
+      if (ta.value === last) return;
+      const text = ta.value;
+      const { record, persisted } = JournalStore.setSync(date, text);
+      last = text;
+      setStatus(persisted ? `Saved · ${fmtTime(new Date(record.updatedAt))}` : 'Kept for this visit only: storage is blocked', !persisted);
+      onSaved && onSaved(date, text);
+    },
+  });
+  const stopWatching = JournalStore.onChange(async (d, source) => {
+    if (source === 'local' || (d && d !== date)) return;
+    const r = await JournalStore.get(date);
+    // Only update a box that is idle and fully saved; anything else was judged by the engine already.
+    if (!r || r.text === ta.value || inUse()) return;
+    ta.value = r.text;
+    last = r.text;
+    refreshMeta();
+    setStatus(r.text.trim() ? `Updated by sync · ${fmtTime(new Date(r.updatedAt))}` : 'Cleared by sync');
+    onSaved && onSaved(date, r.text);
+  });
+
   JournalStore.get(date).then((r) => {
     if (r && !ta.value) {
       ta.value = r.text;
@@ -145,7 +179,7 @@ export function renderJournal(entry, { onSaved } = {}) {
     el('ol', { class: 'prompts' }, prompts.map((p) => el('li', null, p))),
     ta,
     nudge,
-    el('div', { class: 'j-meta' }, status, count),
+    el('div', { class: 'j-meta' }, el('span', { class: 'j-left' }, status, syncLine.node), count),
     el(
       'div',
       { class: 'j-actions' },
@@ -162,6 +196,9 @@ export function renderJournal(entry, { onSaved } = {}) {
     },
     destroy() {
       debounced.cancel();
+      unregister();
+      stopWatching();
+      syncLine.destroy();
       if (root.classList.contains('is-focus')) setFocus(false);
     },
   };

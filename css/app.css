@@ -240,6 +240,17 @@ button:disabled { cursor: default; }
 }
 .offline svg { flex: none; }
 
+/* quiet strip for sync things that need a person (conflict, signed out, problem) */
+.syncbar { position: relative; }
+.syncbar-in {
+  display: flex; align-items: center; gap: 10px; margin: 0 0 12px;
+  padding: 7px 8px 7px 14px; border-radius: 12px; font-size: .85rem;
+  background: color-mix(in srgb, var(--accent) 18%, var(--surface)); border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+}
+.syncbar-in svg { flex: none; color: var(--accent-ink); }
+.syncbar-in span { flex: 1; min-width: 0; }
+.syncbar-in .btn { flex: none; }
+
 /* -------------------------------------------------------- week strip */
 .weekstrip {
   position: sticky; top: 0; z-index: 30;
@@ -362,6 +373,11 @@ main { display: block; container: main / inline-size; padding-top: 18px; min-wid
 .j-text:focus-visible { outline: 0; border-bottom-color: var(--accent); box-shadow: 0 1px 0 var(--accent); border-radius: 0; }
 .nudge { font: italic 500 1.1rem var(--serif); color: var(--accent-ink); margin-top: 8px; }
 .j-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 8px; font-size: .8rem; color: var(--muted); min-height: 1.6em; }
+.j-left { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 0 8px; min-width: 0; }
+.j-sync::before { content: "·"; margin-inline-end: 8px; }
+.j-sync.warn { color: var(--danger); }
+.linkish { border: 0; background: none; padding: 2px 0; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; min-height: 28px; }
+.linkish:hover { color: var(--ink); }
 .j-actions { margin-top: 14px; display: grid; gap: 8px; justify-items: start; }
 
 .journal.is-focus {
@@ -498,12 +514,40 @@ dialog.lookup .sheet-body { padding-top: 6px; }
 .sync-status svg { margin-top: 2px; color: var(--accent-ink); }
 .sync-status.warn svg { color: var(--danger); }
 .sync-status b { font-weight: 600; font-size: .95rem; }
+/* sync panel */
+.sync-panel { display: grid; gap: 4px; }
+.sync-status .ss-icon { display: inline-flex; margin-top: 2px; color: var(--accent-ink); }
+.sync-status.warn .ss-icon { color: var(--danger); }
+.sync-status .ss-icon svg { margin-top: 0; color: inherit; }
+.sync-status .btn { margin-top: 8px; }
+.sync-form { display: grid; gap: 8px; padding-top: 4px; }
+.sync-form .set-col { padding: 2px 0; }
+.sync-msg { font-size: .88rem; line-height: 1.45; }
+.sync-account .set-row { padding: 2px 0; }
+.sync-account .set-row b { font-weight: 600; overflow-wrap: anywhere; }
+.sync-off { padding: 2px 2px 6px; }
 .set-group .btn-row { margin: 10px 0; }
 .set-group > .fine { margin-bottom: 4px; }
 .import-box { margin: 4px 0 10px; padding: 14px; border: 1px solid var(--rule-strong); border-radius: 12px; background: var(--surface); }
 .ib-title { font-weight: 600; margin-bottom: 8px; }
 .ib-list { display: grid; gap: 4px; font-size: .9rem; margin-bottom: 12px; padding-inline-start: 18px; list-style: disc; }
 .ib-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* two versions of a day */
+dialog.conflict { width: min(720px, 100%); }
+dialog.conflict .sheet-head h2 { font-size: 1.5rem; }
+.cf-note { margin: 4px 0 10px; padding: 8px 12px; border-radius: 10px; font-size: .88rem; background: color-mix(in srgb, var(--accent) 18%, var(--surface)); }
+.cf-day { margin: 4px 0 10px; }
+.cf-grid { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 640px) { .cf-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cf-card { border: 1px solid var(--rule-strong); border-radius: 12px; background: var(--surface); padding: 12px 14px; min-width: 0; }
+.cf-card h3 { font: 600 .68rem var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); }
+.cf-meta { font-size: .8rem; color: var(--muted); margin: 2px 0 8px; }
+.cf-text { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 34dvh; overflow: auto; font: 500 1.08rem/1.6 var(--serif); }
+.cf-text.empty { color: var(--muted); font-style: italic; }
+.cf-choices { display: grid; gap: 14px; margin-top: 16px; }
+.cf-choice { display: grid; gap: 4px; justify-items: start; }
+.cf-choice .btn { max-width: 100%; }
 .about { margin-top: 12px; text-align: center; font-family: var(--serif); font-style: italic; font-size: 1rem; }
 
 .lk-hint { color: var(--muted); padding: 22px 4px; text-align: center; font-family: var(--serif); font-style: italic; font-size: 1.2rem; }

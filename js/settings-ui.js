@@ -6,6 +6,7 @@ import { prefs, set, SIZES, THEMES } from './prefs.js';
 import { JournalStore } from './store-journal.js';
 import { EntryStore } from './store-entries.js';
 import { syncSizeButtons } from './view-piece.js';
+import { syncPanel } from './sync-ui.js';
 
 async function toMarkdown() {
   const [records, rows] = await Promise.all([JournalStore.all(), EntryStore.list().catch(() => [])]);
@@ -136,24 +137,7 @@ export function openSettings({ onImported } = {}) {
           'section',
           { class: 'set-group' },
           el('h3', null, 'Sync & backup'),
-          el(
-            'div',
-            { class: `sync-status ${JournalStore.persistent ? '' : 'warn'}` },
-            icon(JournalStore.persistent ? 'check' : 'offline', 18),
-            el(
-              'div',
-              null,
-              el('b', null, JournalStore.persistent ? 'Saved on this device' : 'Not saved: storage is blocked'),
-              el(
-                'p',
-                { class: 'fine' },
-                JournalStore.persistent
-                  ? 'Your journal stays in this browser. Clearing site data removes it, so export a copy now and then.'
-                  : 'This browser is blocking storage, so writing lasts only until you close the tab. Export before you leave.',
-              ),
-            ),
-          ),
-          el('div', { class: 'set-row' }, el('span', { class: 'set-label' }, 'Sync across devices'), el('button', { class: 'btn small', type: 'button', disabled: true }, 'Sign in · coming soon')),
+          syncPanel({ localSaved: JournalStore.persistent }),
           el(
             'div',
             { class: 'btn-row' },
