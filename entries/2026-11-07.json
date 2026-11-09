@@ -1,28 +1,45 @@
 {
   "date": "2026-11-07",
   "type": "song",
-  "title": "Ajeeb Dastan Hai Yeh",
-  "author": "Shailendra",
-  "year": 1960,
+  "title": "Abhi Na Jao Chhod Kar",
+  "author": "Sahir Ludhianvi",
+  "year": 1961,
   "lang": "hi",
   "dir": "ltr",
-  "credits": "Lyrics Shailendra, music Shankar-Jaikishan, sung by Lata Mangeshkar, from the film Dil Apna Aur Preet Parai (1960)",
+  "credits": "Lyrics Sahir Ludhianvi, music Jaidev, sung by Mohammed Rafi and Asha Bhosle, from the film Hum Dono (1961)",
   "links": [
-    { "label": "Search YouTube", "url": "https://www.youtube.com/results?search_query=Ajeeb+Dastan+Hai+Yeh+Dil+Apna+Aur+Preet+Parai+Lata+Mangeshkar" },
-    { "label": "Search Spotify", "url": "https://open.spotify.com/search/Ajeeb%20Dastan%20Hai%20Yeh%20Lata%20Mangeshkar" },
-    { "label": "Search Genius", "url": "https://genius.com/search?q=Ajeeb%20Dastan%20Hai%20Yeh" }
+    {
+      "label": "Search YouTube",
+      "url": "https://www.youtube.com/results?search_query=Abhi+Na+Jao+Chhod+Kar+Hum+Dono+1961"
+    },
+    {
+      "label": "Search Spotify",
+      "url": "https://open.spotify.com/search/Abhi%20Na%20Jao%20Chhod%20Kar%20Hum%20Dono%201961"
+    },
+    {
+      "label": "Search Genius",
+      "url": "https://genius.com/search?q=Abhi%20Na%20Jao%20Chhod%20Kar%20Hum%20Dono%201961"
+    }
   ],
-  "who": "Shailendra was a Hindi film lyricist closely associated with the composer duo Shankar-Jaikishan. Lata Mangeshkar (1929 to 2022) sang for generations of Hindi film heroines. The song is from Dil Apna Aur Preet Parai, released in 1960.",
-  "why": "The song serves a moment in the film's love story. I do not have a documented account of how it came to be written beyond the film's needs, so I will not add one.",
-  "notice": "The title already tells you the mood: this is a story that does not quite resolve. Listen for how the voice carries that feeling. Notice how a few simple words about a story can say something larger about love.",
+  "who": "Sahir Ludhianvi (1921 to 1980) was an Urdu poet and one of Hindi cinema's most admired lyricists. Jaidev composed the music, and the duet is sung by Mohammed Rafi and Asha Bhosle. In the film it is picturised on Dev Anand and Sadhana.",
+  "why": "It was written for the film Hum Dono, released in 1961. I do not have a documented account of how this particular song was written, so I will not offer one.",
+  "notice": "Listen to it as a conversation: one voice asks, the other answers. Notice how gently the tune moves, with nothing hurried in it. Notice that the whole song is about a small thing, wanting someone to stay a little longer.",
   "prompts": [
-    "What is a story in your life that you still cannot tell with a neat ending?",
-    "Which song do you reach for when you do not know what you feel, and why that one?"
+    "When did you last want an evening not to end? What were you afraid of losing?",
+    "Which is harder for you: asking someone to stay, or being the one who has to leave?"
   ],
   "sources": [
-    { "title": "Dil Apna Aur Preet Parai on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dil+Apna+Aur+Preet+Parai" },
-    { "title": "Lata Mangeshkar on Wikipedia", "url": "https://en.wikipedia.org/wiki/Lata_Mangeshkar" },
-    { "title": "Shailendra on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Shailendra+lyricist" }
-  ],
-  "sample": true
+    {
+      "title": "Hum Dono (1961 film) on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Hum+Dono+1961+film"
+    },
+    {
+      "title": "Sahir Ludhianvi on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Sahir+Ludhianvi"
+    },
+    {
+      "title": "Jaidev on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jaidev+composer"
+    }
+  ]
 }

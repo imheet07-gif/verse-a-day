@@ -1,22 +1,37 @@
 {
   "date": "2026-11-08",
   "type": "classic",
-  "title": "Two Dohas",
-  "author": "Kabir",
-  "lang": "hi",
-  "dir": "ltr",
-  "text": "पोथी पढ़ि पढ़ि जग मुआ, पंडित भया न कोय।\nढाई आखर प्रेम का, पढ़े सो पंडित होय॥\n\nबुरा जो देखन मैं चला, बुरा न मिलिया कोय।\nजो दिल खोजा आपना, मुझसे बुरा न कोय॥",
-  "links": [],
-  "who": "Kabir was a poet and mystic of North India. Most accounts place him in the 15th century, with Varanasi as his home, but his exact dates and many details of his life are disputed. His verses are cherished across Hindu, Muslim and Sikh traditions.",
-  "why": "No single occasion for these couplets is documented. Kabir's dohas were spoken and sung long before they were gathered into written collections, so the wording below is one common form; other collections vary a little, and the same lines turn up with small differences.",
-  "notice": "Each couplet sets a big claim against a small one. The first says that reading mountains of books has not made the world wise, while two and a half letters of love might. The second turns the search for other people's faults back on the one searching. Notice how each doha lands its point in the second line.",
+  "title": "Two Couplets",
+  "author": "Mirza Ghalib",
+  "year": 1869,
+  "lang": "ur",
+  "dir": "rtl",
+  "text": "عشق پر زور نہیں ہے یہ وہ آتش غالبؔ\nکہ لگائے نہ لگے اور بجھائے نہ بنے\n\nدلِ ناداں تجھے ہوا کیا ہے\nآخر اس درد کی دوا کیا ہے",
+  "links": [
+    {
+      "label": "Read and hear Ghalib on Rekhta",
+      "url": "https://www.rekhta.org/poets/mirza-ghalib"
+    },
+    {
+      "label": "Hear it sung (YouTube)",
+      "url": "https://www.youtube.com/results?search_query=Dil-e-Nadan+Tujhe+Hua+Kya+Hai+Ghalib"
+    }
+  ],
+  "who": "Mirza Asadullah Khan Ghalib (1797 to 1869) lived most of his life in Delhi and wrote in Urdu and Persian. He is among the most quoted poets of the ghazal tradition. The year shown is the year of his death; these couplets are older.",
+  "why": "These are single couplets from two of his ghazals. In a ghazal each couplet stands on its own, and there is no documented occasion for these two. In plain sense: the first says love cannot be forced, it is a fire that will not light on command or go out on command. The second asks the foolish heart what has happened to it, and what cure this ache could have.",
+  "notice": "Notice that each couplet is complete in two lines. In the first, the poet's own name appears, as is the custom in a ghazal's closing couplet. In the second, notice that the speaker talks to his own heart as if it were another person.",
   "prompts": [
-    "Where in your own life have you read or studied your way around something that only practice, or care, could settle?",
-    "Think of a fault you noticed in someone this week. What happens if you look for the same thing in yourself first?"
+    "Have you ever tried to start or stop a feeling by will? What happened?",
+    "If you spoke to your own heart as a separate person today, what would you ask it?"
   ],
   "sources": [
-    { "title": "Kabir on Wikipedia", "url": "https://en.wikipedia.org/wiki/Kabir" },
-    { "title": "Doha (couplet form) on Wikipedia", "url": "https://en.wikipedia.org/wiki/Doha_(poetry)" }
-  ],
-  "sample": true
+    {
+      "title": "Ghalib on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ghalib"
+    },
+    {
+      "title": "Mirza Ghalib on Rekhta",
+      "url": "https://www.rekhta.org/poets/mirza-ghalib"
+    }
+  ]
 }

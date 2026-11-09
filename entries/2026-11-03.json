@@ -1,25 +1,36 @@
 {
   "date": "2026-11-03",
   "type": "modern",
-  "title": "Wild Geese",
-  "author": "Mary Oliver",
-  "year": 1986,
+  "title": "Sonnet XVII",
+  "author": "Pablo Neruda",
+  "year": 1959,
   "lang": "en",
   "dir": "ltr",
   "links": [
-    { "label": "Find the poem", "url": "https://duckduckgo.com/?q=Mary+Oliver+Wild+Geese+poem" },
-    { "label": "Hear it read (YouTube)", "url": "https://www.youtube.com/results?search_query=Mary+Oliver+Wild+Geese+read+aloud" }
+    {
+      "label": "Find the poem",
+      "url": "https://duckduckgo.com/?q=Pablo+Neruda+Sonnet+XVII+poem"
+    },
+    {
+      "label": "Hear it read (YouTube)",
+      "url": "https://www.youtube.com/results?search_query=Pablo+Neruda+Sonnet+XVII+recitation"
+    }
   ],
-  "who": "Mary Oliver (1935 to 2019) was an American poet who wrote mostly about the natural world and the attention it asks of us. She won the Pulitzer Prize for Poetry in 1984.",
-  "why": "The poem appears in her 1986 collection Dream Work. No specific event behind it is documented, so it is best taken as it comes, without a backstory.",
-  "notice": "Notice who the poem speaks to, and how little it asks of that person. Pay attention to the way it moves from a human scale, with its worries and rules, out to a much larger one, and what it says is waiting there. Notice the last turn: whether the poem leaves you alone with the world or invites you into it.",
+  "who": "Pablo Neruda (1904 to 1973) was a Chilean poet and diplomat who received the Nobel Prize in Literature in 1971. He wrote in Spanish, so in English the wording depends on the translator.",
+  "why": "The poem comes from Cien sonetos de amor (One Hundred Love Sonnets), published in 1959 and dedicated to Matilde Urrutia, who became his wife. I do not know of a documented account of this single sonnet's writing beyond that.",
+  "notice": "Notice that the poem begins by saying how the speaker does not love, before it says how he does. Watch which things are compared to love and which are refused. Notice how plain the closing lines are after the images that come before.",
   "prompts": [
-    "Where did you feel most at home in the world today, even for a moment?",
-    "What is one thing you are being harder on yourself about than anyone else would be?"
+    "Describe someone you love without using any of the usual comparisons. What is left?",
+    "What do you love in a person that nobody else would think to praise?"
   ],
   "sources": [
-    { "title": "Mary Oliver on Wikipedia", "url": "https://en.wikipedia.org/wiki/Mary_Oliver" },
-    { "title": "Search for the poem on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mary+Oliver+Wild+Geese" }
-  ],
-  "sample": true
+    {
+      "title": "Pablo Neruda on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pablo+Neruda"
+    },
+    {
+      "title": "One Hundred Love Sonnets on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Cien+sonetos+de+amor+Neruda"
+    }
+  ]
 }

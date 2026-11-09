@@ -1,25 +1,40 @@
 {
   "date": "2026-11-06",
   "type": "modern",
-  "title": "Possibilities",
-  "author": "Wisława Szymborska",
-  "year": 1986,
+  "title": "Mujh Se Pehli Si Mohabbat",
+  "author": "Faiz Ahmed Faiz",
+  "year": 1941,
   "lang": "en",
   "dir": "ltr",
   "links": [
-    { "label": "Find the poem", "url": "https://duckduckgo.com/?q=Szymborska+Possibilities+poem" },
-    { "label": "Hear it read (YouTube)", "url": "https://www.youtube.com/results?search_query=Szymborska+Possibilities+poem+read+aloud" }
+    {
+      "label": "Find the poem",
+      "url": "https://duckduckgo.com/?q=Faiz+Ahmed+Faiz+Mujh+Se+Pehli+Si+Mohabbat+poem"
+    },
+    {
+      "label": "Hear it read (YouTube)",
+      "url": "https://www.youtube.com/results?search_query=Faiz+Ahmed+Faiz+Mujh+Se+Pehli+Si+Mohabbat+recitation"
+    },
+    {
+      "label": "Hear it sung (YouTube)",
+      "url": "https://www.youtube.com/results?search_query=Noor+Jehan+Mujh+Se+Pehli+Si+Mohabbat"
+    }
   ],
-  "who": "Wisława Szymborska (1923 to 2012) was a Polish poet and essayist who received the Nobel Prize in Literature in 1996. She wrote in Polish; English readers usually meet her through translation, so the exact wording depends on the translator.",
-  "why": "The reason this poem was written is not known to me, and I will not guess. What is documented is that Szymborska wrote short, plain-spoken poems built around small preferences and large questions.",
-  "notice": "Notice how the poem is built as a list of things the speaker prefers, and how ordinary the items are. Watch for the moment the list stops being a list of tastes and starts being a way of describing a whole person. Notice too what the repeated shape does to your own thoughts: you start making your own list.",
+  "who": "Faiz Ahmed Faiz (1911 to 1984) was one of the best known Urdu poets of the twentieth century, born in Punjab in British India and later a citizen of Pakistan. He was associated with the Progressive Writers' Movement.",
+  "why": "The poem appears in his first collection, Naqsh-e-Faryadi, published in 1941. It is widely read as the point where his poetry turns from love alone toward the suffering of the world around him. A famous sung version is by Noor Jehan.",
+  "notice": "Notice that it is a love poem that asks the beloved not to expect the old kind of love. Watch for the moment the speaker's eyes move from one person to everyone else. Ask yourself whether the love has grown smaller or larger by the end.",
   "prompts": [
-    "Write three things you prefer, in plain words. What do they say about you that a résumé would not?",
-    "Which of your preferences would you defend, and which would you quietly let go of?"
+    "Has something in the wider world ever changed how you love one person?",
+    "What did love mean to you ten years ago that it no longer means?"
   ],
   "sources": [
-    { "title": "Wisława Szymborska on Wikipedia", "url": "https://en.wikipedia.org/wiki/Wis%C5%82awa_Szymborska" },
-    { "title": "Search for the poem on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Szymborska+Possibilities" }
-  ],
-  "sample": true
+    {
+      "title": "Faiz Ahmed Faiz on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Faiz+Ahmed+Faiz"
+    },
+    {
+      "title": "Naqsh-e-Faryadi on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Naqsh-e-Faryadi+Faiz"
+    }
+  ]
 }

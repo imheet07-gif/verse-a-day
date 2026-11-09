@@ -1,23 +1,33 @@
 {
   "date": "2026-11-09",
   "type": "classic",
-  "title": "The Road Not Taken",
-  "author": "Robert Frost",
-  "year": 1916,
+  "title": "When You Are Old",
+  "author": "W. B. Yeats",
+  "year": 1893,
   "lang": "en",
   "dir": "ltr",
-  "text": "Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;\n\nThen took the other, as just as fair,\nAnd having perhaps the better claim,\nBecause it was grassy and wanted wear;\nThough as for that the passing there\nHad worn them really about the same,\n\nAnd both that morning equally lay\nIn leaves no step had trodden black.\nOh, I kept the first for another day!\nYet knowing how way leads on to way,\nI doubted if I should ever come back.\n\nI shall be telling this with a sigh\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I—\nI took the one less traveled by,\nAnd that has made all the difference.",
-  "links": [],
-  "who": "Robert Frost (1874 to 1963) was an American poet, born in San Francisco and long associated with New England farm life. He won the Pulitzer Prize for Poetry four times. The poem appeared in his 1916 collection Mountain Interval.",
-  "why": "It is widely reported that Frost wrote it with his friend, the poet Edward Thomas, in mind, since the two had walked together in England and Thomas was known to regret whichever path they had not chosen. Frost himself was often cagey about the poem's meaning, so treat any single explanation as one reading, not the last word.",
-  "notice": "Read the second stanza closely: the speaker says the roads were worn \"really about the same\" and the third stanza says they \"equally lay\" in leaves. The poem's own evidence for a clear difference is thin. Then look at the final stanza, where the speaker predicts how they will tell the story later, and ask whether the poem agrees with that telling.",
+  "text": "When you are old and grey and full of sleep,\nAnd nodding by the fire, take down this book,\nAnd slowly read, and dream of the soft look\nYour eyes had once, and of their shadows deep;\n\nHow many loved your moments of glad grace,\nAnd loved your beauty with love false or true,\nBut one man loved the pilgrim soul in you,\nAnd loved the sorrows of your changing face;\n\nAnd bending down beside the glowing bars,\nMurmur, a little sadly, how Love fled\nAnd paced upon the mountains overhead\nAnd hid his face amid a crowd of stars.",
+  "links": [
+    {
+      "label": "Hear it read (YouTube)",
+      "url": "https://www.youtube.com/results?search_query=Yeats+When+You+Are+Old+read+aloud"
+    }
+  ],
+  "who": "William Butler Yeats (1865 to 1939) was an Irish poet and playwright who received the Nobel Prize in Literature in 1923.",
+  "why": "The poem was published in the early 1890s and is commonly linked to Maud Gonne, whom Yeats loved for many years and who did not marry him. It is modelled on a sonnet by the French poet Pierre de Ronsard.",
+  "notice": "Notice that the whole poem is one sentence, spoken about a future that has not happened. Watch the difference it draws between those who loved her beauty and the one who loved something else. Notice where Love goes in the last two lines.",
   "prompts": [
-    "Which choice in your own past do you now tell as if it was clearer than it felt at the time?",
-    "What small fork is in front of you this week, and what would it mean to choose it without needing it to make all the difference?"
+    "What would you want someone to remember about how you loved them, decades from now?",
+    "What is the 'pilgrim soul' in a person you love: the part that is still travelling?"
   ],
   "sources": [
-    { "title": "The Road Not Taken on Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Road_Not_Taken" },
-    { "title": "Robert Frost on Wikipedia", "url": "https://en.wikipedia.org/wiki/Robert_Frost" }
-  ],
-  "sample": true
+    {
+      "title": "When You Are Old on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=When+You+Are+Old+Yeats"
+    },
+    {
+      "title": "W. B. Yeats on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=W.+B.+Yeats"
+    }
+  ]
 }

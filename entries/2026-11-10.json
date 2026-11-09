@@ -1,25 +1,39 @@
 {
   "date": "2026-11-10",
   "type": "modern",
-  "title": "A Brief for the Defense",
-  "author": "Jack Gilbert",
-  "year": 2005,
+  "title": "Main Tenu Phir Milangi",
+  "author": "Amrita Pritam",
   "lang": "en",
   "dir": "ltr",
   "links": [
-    { "label": "Find the poem", "url": "https://duckduckgo.com/?q=Jack+Gilbert+A+Brief+for+the+Defense+poem" },
-    { "label": "Hear it read (YouTube)", "url": "https://www.youtube.com/results?search_query=Jack+Gilbert+A+Brief+for+the+Defense+read+aloud" }
+    {
+      "label": "Find the poem",
+      "url": "https://duckduckgo.com/?q=Amrita+Pritam+Main+Tenu+Phir+Milangi+poem"
+    },
+    {
+      "label": "Hear it read (YouTube)",
+      "url": "https://www.youtube.com/results?search_query=Amrita+Pritam+Main+Tenu+Phir+Milangi+recitation"
+    },
+    {
+      "label": "Hear it recited (YouTube)",
+      "url": "https://www.youtube.com/results?search_query=Main+Tenu+Phir+Milangi+Amrita+Pritam+Gulzar"
+    }
   ],
-  "who": "Jack Gilbert (1925 to 2012) was an American poet. He published rarely, and lived for long stretches abroad and out of the literary spotlight.",
-  "why": "The poem appears in his 2005 collection Refusing Heaven. A particular occasion for it is not documented, so there is no backstory to give.",
-  "notice": "The title borrows the language of a courtroom. Notice what the poem sets against the world's sorrow, and the permission it grants. Notice also how it speaks about gladness: as something to be defended, not merely felt.",
+  "who": "Amrita Pritam (1919 to 2005) was a poet and novelist who wrote mainly in Punjabi and also in Hindi. She received the Jnanpith Award in 1981. The title means 'I will meet you again'.",
+  "why": "It is widely reported that she wrote this poem late in her life for the artist Imroz, her companion of several decades. I cannot confirm the exact date, so none is shown.",
+  "notice": "Notice that the poem makes a promise without knowing how it will be kept. Watch the different forms the speaker imagines returning in. Notice how calm the voice is about something as large as death.",
   "prompts": [
-    "What is something good in your life that you feel you have to justify, to others or to yourself?",
-    "Where did you let yourself be glad today, even though the day was not simple?"
+    "If you could promise one person that you would find them again, who would it be?",
+    "In what small, ordinary form would you want to return to someone's day?"
   ],
   "sources": [
-    { "title": "Jack Gilbert on Wikipedia", "url": "https://en.wikipedia.org/wiki/Jack_Gilbert" },
-    { "title": "Search for the poem on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Jack+Gilbert+Refusing+Heaven" }
-  ],
-  "sample": true
+    {
+      "title": "Amrita Pritam on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Amrita+Pritam"
+    },
+    {
+      "title": "Imroz on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Imroz+artist"
+    }
+  ]
 }

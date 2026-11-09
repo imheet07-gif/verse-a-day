@@ -16,8 +16,13 @@
     "The speaker promises permanence through writing. What have you written, or wish you had written down, that has outlasted the day?"
   ],
   "sources": [
-    { "title": "Sonnet 18 on Wikipedia", "url": "https://en.wikipedia.org/wiki/Sonnet_18" },
-    { "title": "William Shakespeare on Wikipedia", "url": "https://en.wikipedia.org/wiki/William_Shakespeare" }
-  ],
-  "sample": true
+    {
+      "title": "Sonnet 18 on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sonnet_18"
+    },
+    {
+      "title": "William Shakespeare on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/William_Shakespeare"
+    }
+  ]
 }
