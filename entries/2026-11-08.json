@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-08",
+  "type": "classic",
+  "title": "Two Dohas",
+  "author": "Kabir",
+  "lang": "hi",
+  "dir": "ltr",
+  "text": "पोथी पढ़ि पढ़ि जग मुआ, पंडित भया न कोय।\nढाई आखर प्रेम का, पढ़े सो पंडित होय॥\n\nबुरा जो देखन मैं चला, बुरा न मिलिया कोय।\nजो दिल खोजा आपना, मुझसे बुरा न कोय॥",
+  "links": [],
+  "who": "Kabir was a poet and mystic of North India. Most accounts place him in the 15th century, with Varanasi as his home, but his exact dates and many details of his life are disputed. His verses are cherished across Hindu, Muslim and Sikh traditions.",
+  "why": "No single occasion for these couplets is documented. Kabir's dohas were spoken and sung long before they were gathered into written collections, so the wording below is one common form; other collections vary a little, and the same lines turn up with small differences.",
+  "notice": "Each couplet sets a big claim against a small one. The first says that reading mountains of books has not made the world wise, while two and a half letters of love might. The second turns the search for other people's faults back on the one searching. Notice how each doha lands its point in the second line.",
+  "prompts": [
+    "Where in your own life have you read or studied your way around something that only practice, or care, could settle?",
+    "Think of a fault you noticed in someone this week. What happens if you look for the same thing in yourself first?"
+  ],
+  "sources": [
+    { "title": "Kabir on Wikipedia", "url": "https://en.wikipedia.org/wiki/Kabir" },
+    { "title": "Doha (couplet form) on Wikipedia", "url": "https://en.wikipedia.org/wiki/Doha_(poetry)" }
+  ],
+  "sample": true
+}

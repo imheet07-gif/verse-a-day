@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-06",
+  "type": "modern",
+  "title": "Possibilities",
+  "author": "Wisława Szymborska",
+  "year": 1986,
+  "lang": "en",
+  "dir": "ltr",
+  "links": [
+    { "label": "Find the poem", "url": "https://duckduckgo.com/?q=Szymborska+Possibilities+poem" },
+    { "label": "Hear it read (YouTube)", "url": "https://www.youtube.com/results?search_query=Szymborska+Possibilities+poem+read+aloud" }
+  ],
+  "who": "Wisława Szymborska (1923 to 2012) was a Polish poet and essayist who received the Nobel Prize in Literature in 1996. She wrote in Polish; English readers usually meet her through translation, so the exact wording depends on the translator.",
+  "why": "The reason this poem was written is not known to me, and I will not guess. What is documented is that Szymborska wrote short, plain-spoken poems built around small preferences and large questions.",
+  "notice": "Notice how the poem is built as a list of things the speaker prefers, and how ordinary the items are. Watch for the moment the list stops being a list of tastes and starts being a way of describing a whole person. Notice too what the repeated shape does to your own thoughts: you start making your own list.",
+  "prompts": [
+    "Write three things you prefer, in plain words. What do they say about you that a résumé would not?",
+    "Which of your preferences would you defend, and which would you quietly let go of?"
+  ],
+  "sources": [
+    { "title": "Wisława Szymborska on Wikipedia", "url": "https://en.wikipedia.org/wiki/Wis%C5%82awa_Szymborska" },
+    { "title": "Search for the poem on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Szymborska+Possibilities" }
+  ],
+  "sample": true
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-09",
+  "type": "classic",
+  "title": "The Road Not Taken",
+  "author": "Robert Frost",
+  "year": 1916,
+  "lang": "en",
+  "dir": "ltr",
+  "text": "Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;\n\nThen took the other, as just as fair,\nAnd having perhaps the better claim,\nBecause it was grassy and wanted wear;\nThough as for that the passing there\nHad worn them really about the same,\n\nAnd both that morning equally lay\nIn leaves no step had trodden black.\nOh, I kept the first for another day!\nYet knowing how way leads on to way,\nI doubted if I should ever come back.\n\nI shall be telling this with a sigh\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I—\nI took the one less traveled by,\nAnd that has made all the difference.",
+  "links": [],
+  "who": "Robert Frost (1874 to 1963) was an American poet, born in San Francisco and long associated with New England farm life. He won the Pulitzer Prize for Poetry four times. The poem appeared in his 1916 collection Mountain Interval.",
+  "why": "It is widely reported that Frost wrote it with his friend, the poet Edward Thomas, in mind, since the two had walked together in England and Thomas was known to regret whichever path they had not chosen. Frost himself was often cagey about the poem's meaning, so treat any single explanation as one reading, not the last word.",
+  "notice": "Read the second stanza closely: the speaker says the roads were worn \"really about the same\" and the third stanza says they \"equally lay\" in leaves. The poem's own evidence for a clear difference is thin. Then look at the final stanza, where the speaker predicts how they will tell the story later, and ask whether the poem agrees with that telling.",
+  "prompts": [
+    "Which choice in your own past do you now tell as if it was clearer than it felt at the time?",
+    "What small fork is in front of you this week, and what would it mean to choose it without needing it to make all the difference?"
+  ],
+  "sources": [
+    { "title": "The Road Not Taken on Wikipedia", "url": "https://en.wikipedia.org/wiki/The_Road_Not_Taken" },
+    { "title": "Robert Frost on Wikipedia", "url": "https://en.wikipedia.org/wiki/Robert_Frost" }
+  ],
+  "sample": true
+}

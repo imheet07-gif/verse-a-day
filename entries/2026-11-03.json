@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-03",
+  "type": "modern",
+  "title": "Wild Geese",
+  "author": "Mary Oliver",
+  "year": 1986,
+  "lang": "en",
+  "dir": "ltr",
+  "links": [
+    { "label": "Find the poem", "url": "https://duckduckgo.com/?q=Mary+Oliver+Wild+Geese+poem" },
+    { "label": "Hear it read (YouTube)", "url": "https://www.youtube.com/results?search_query=Mary+Oliver+Wild+Geese+read+aloud" }
+  ],
+  "who": "Mary Oliver (1935 to 2019) was an American poet who wrote mostly about the natural world and the attention it asks of us. She won the Pulitzer Prize for Poetry in 1984.",
+  "why": "The poem appears in her 1986 collection Dream Work. No specific event behind it is documented, so it is best taken as it comes, without a backstory.",
+  "notice": "Notice who the poem speaks to, and how little it asks of that person. Pay attention to the way it moves from a human scale, with its worries and rules, out to a much larger one, and what it says is waiting there. Notice the last turn: whether the poem leaves you alone with the world or invites you into it.",
+  "prompts": [
+    "Where did you feel most at home in the world today, even for a moment?",
+    "What is one thing you are being harder on yourself about than anyone else would be?"
+  ],
+  "sources": [
+    { "title": "Mary Oliver on Wikipedia", "url": "https://en.wikipedia.org/wiki/Mary_Oliver" },
+    { "title": "Search for the poem on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mary+Oliver+Wild+Geese" }
+  ],
+  "sample": true
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-04",
+  "type": "song",
+  "title": "Lag Jaa Gale",
+  "author": "Raja Mehdi Ali Khan",
+  "year": 1964,
+  "lang": "hi",
+  "dir": "ltr",
+  "credits": "Lyrics Raja Mehdi Ali Khan, music Madan Mohan, sung by Lata Mangeshkar, from the film Woh Kaun Thi? (1964)",
+  "links": [
+    { "label": "Search YouTube", "url": "https://www.youtube.com/results?search_query=Lag+Jaa+Gale+Woh+Kaun+Thi+1964+Lata+Mangeshkar" },
+    { "label": "Search Spotify", "url": "https://open.spotify.com/search/Lag%20Jaa%20Gale%20Lata%20Mangeshkar" },
+    { "label": "Search Genius", "url": "https://genius.com/search?q=Lag%20Jaa%20Gale" }
+  ],
+  "who": "Raja Mehdi Ali Khan was an Urdu poet and film lyricist. Madan Mohan was a film composer, and Lata Mangeshkar (1929 to 2022) was one of the best known playback singers in Hindi cinema. The song is from the suspense film Woh Kaun Thi?, released in 1964.",
+  "why": "In the film the song belongs to a scene of its story. Beyond that, I do not have a documented account of how this particular song was commissioned or written, so I will not offer one.",
+  "notice": "Listen once for the voice alone, and once for what the orchestra does underneath it. Notice the pace, and how much room the singing is given. Notice also that the words are spoken to one person, not to a crowd.",
+  "prompts": [
+    "Whom would you say something to, if you knew there would be only this one night to say it?",
+    "What does it feel like in your body to listen to a song you already know by heart?"
+  ],
+  "sources": [
+    { "title": "Woh Kaun Thi? on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Woh+Kaun+Thi+1964+film" },
+    { "title": "Lata Mangeshkar on Wikipedia", "url": "https://en.wikipedia.org/wiki/Lata_Mangeshkar" },
+    { "title": "Madan Mohan on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Madan+Mohan+composer" }
+  ],
+  "sample": true
+}

@@ -1,0 +1,10 @@
+[
+  { "date": "2026-11-10", "type": "modern", "title": "A Brief for the Defense", "author": "Jack Gilbert", "lang": "en" },
+  { "date": "2026-11-09", "type": "classic", "title": "The Road Not Taken", "author": "Robert Frost", "lang": "en" },
+  { "date": "2026-11-08", "type": "classic", "title": "Two Dohas", "author": "Kabir", "lang": "hi" },
+  { "date": "2026-11-07", "type": "song", "title": "Ajeeb Dastan Hai Yeh", "author": "Shailendra", "lang": "hi" },
+  { "date": "2026-11-06", "type": "modern", "title": "Possibilities", "author": "Wisława Szymborska", "lang": "en" },
+  { "date": "2026-11-05", "type": "classic", "title": "Sonnet 18", "author": "William Shakespeare", "lang": "en" },
+  { "date": "2026-11-04", "type": "song", "title": "Lag Jaa Gale", "author": "Raja Mehdi Ali Khan", "lang": "hi" },
+  { "date": "2026-11-03", "type": "modern", "title": "Wild Geese", "author": "Mary Oliver", "lang": "en" }
+]

@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-07",
+  "type": "song",
+  "title": "Ajeeb Dastan Hai Yeh",
+  "author": "Shailendra",
+  "year": 1960,
+  "lang": "hi",
+  "dir": "ltr",
+  "credits": "Lyrics Shailendra, music Shankar-Jaikishan, sung by Lata Mangeshkar, from the film Dil Apna Aur Preet Parai (1960)",
+  "links": [
+    { "label": "Search YouTube", "url": "https://www.youtube.com/results?search_query=Ajeeb+Dastan+Hai+Yeh+Dil+Apna+Aur+Preet+Parai+Lata+Mangeshkar" },
+    { "label": "Search Spotify", "url": "https://open.spotify.com/search/Ajeeb%20Dastan%20Hai%20Yeh%20Lata%20Mangeshkar" },
+    { "label": "Search Genius", "url": "https://genius.com/search?q=Ajeeb%20Dastan%20Hai%20Yeh" }
+  ],
+  "who": "Shailendra was a Hindi film lyricist closely associated with the composer duo Shankar-Jaikishan. Lata Mangeshkar (1929 to 2022) sang for generations of Hindi film heroines. The song is from Dil Apna Aur Preet Parai, released in 1960.",
+  "why": "The song serves a moment in the film's love story. I do not have a documented account of how it came to be written beyond the film's needs, so I will not add one.",
+  "notice": "The title already tells you the mood: this is a story that does not quite resolve. Listen for how the voice carries that feeling. Notice how a few simple words about a story can say something larger about love.",
+  "prompts": [
+    "What is a story in your life that you still cannot tell with a neat ending?",
+    "Which song do you reach for when you do not know what you feel, and why that one?"
+  ],
+  "sources": [
+    { "title": "Dil Apna Aur Preet Parai on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dil+Apna+Aur+Preet+Parai" },
+    { "title": "Lata Mangeshkar on Wikipedia", "url": "https://en.wikipedia.org/wiki/Lata_Mangeshkar" },
+    { "title": "Shailendra on Wikipedia", "url": "https://en.wikipedia.org/wiki/Special:Search?search=Shailendra+lyricist" }
+  ],
+  "sample": true
+}
