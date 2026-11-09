@@ -12,6 +12,8 @@ import { openLookup } from './lookup.js';
 import { openSettings } from './settings-ui.js';
 import { anyDialogOpen } from './dialogs.js';
 import { renderWelcome, renderNoPiece, renderError } from './view-states.js';
+import { engine } from './sync-app.js';
+import { initSyncUI } from './sync-ui.js';
 
 const S = {
   entries: [], // index rows, newest first
@@ -391,9 +393,19 @@ window.addEventListener('online', () => $('#offline') && ($('#offline').hidden =
 window.addEventListener('pagehide', () => S.journal && S.journal.flush());
 document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && S.journal && S.journal.flush());
 window.addEventListener('storage', async (e) => {
-  if (e.key && !e.key.startsWith('vad:j:')) return;
+  if (e.key && !JournalStore.owns(e.key)) return;
   await refreshJournaled();
   redrawChrome();
+});
+// Text that arrived from another device (or a sync that changed records) updates the streak and week strip.
+let syncedRefresh = 0;
+JournalStore.onChange((_date, source) => {
+  if (source !== 'sync') return;
+  clearTimeout(syncedRefresh);
+  syncedRefresh = setTimeout(async () => {
+    await refreshJournaled();
+    redrawChrome();
+  }, 150);
 });
 window.matchMedia('(min-width: 900px)').addEventListener?.('change', drawToolbar);
 onPrefs((k) => {
@@ -437,3 +449,7 @@ function registerWorker() {
 apply();
 registerWorker();
 boot();
+// Sync is off unless config.js is filled in (or ?fake-remote=1 on localhost); then this is a no-op.
+initSyncUI({ openSettings: () => openSettings({ onImported: afterImport }) });
+engine.bindBrowser(window, document);
+engine.init().catch(() => {});
