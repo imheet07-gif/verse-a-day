@@ -64,7 +64,7 @@ Vary language, century and mood across the week. Romantic most days, not every d
 - `who` and `why` state only documented facts. If the reason a piece was written
   is not known, say so plainly ("There is no documented account of...") rather than guess.
 - Mark what is tradition or widely reported as such. No invented biography, dates or anecdotes.
-- Links must be search URLs or stable pages you opened, never guessed deep links.
+- Links go straight to the piece wherever possible. A direct link must be a page you opened today and saw is the right piece; never a guessed address. Use a search link only when no trustworthy page exists.
 
 ## Entry schema
 
@@ -94,6 +94,11 @@ Vary language, century and mood across the week. Romantic most days, not every d
   language of `text` (`ur` and `fa` take `"dir": "rtl"`); for modern entries `en`; for Hindi film songs `hi`.
 - Song links, exactly these three: `Search YouTube` (`https://www.youtube.com/results?search_query=...`),
   `Search Spotify` (`https://open.spotify.com/search/...`), `Search Genius` (`https://genius.com/search?q=...`).
-- Modern links: a `Find the poem` search link, plus a reading or recitation search on YouTube.
+  If you opened the song's own Genius page today, link that instead, labelled `Lyrics on Genius`.
+- Modern links: first, a direct link to a page that carries the poem itself on a reputable site
+  (Rekhta, Hindwi, poets.org, Poetry Foundation, a publisher or magazine), labelled like
+  `Read the poem (Rekhta)`. Say the language in the label when it is not English. Only if no such
+  page can be found, a `Find the poem` search link. Then a reading or recitation search on YouTube.
+  Linking to the text is fine; copying any of it into the entry is not.
 - `prompts`: two personal, open questions tied to the piece's theme. They must not quote it.
 - Look at the last few files in `entries/` for the tone and length to match.
