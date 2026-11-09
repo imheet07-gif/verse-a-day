@@ -179,6 +179,13 @@ function mapError(err, fallbackKind = 'server') {
   if (name === 'AuthRetryableFetchError' || name === 'TypeError' || /failed to fetch|network|load failed|fetch failed/i.test(msg)) {
     return new RemoteError('network', msg);
   }
+  // Set-up problems on the project, not the person's session. Say what to do.
+  if (code === 'PGRST205' || code === '42P01') {
+    return new RemoteError('server', 'The journal table is missing in Supabase. Run supabase/schema.sql in the SQL editor.');
+  }
+  if (code === '42501') {
+    return new RemoteError('server', 'Supabase refused access to the journal table. Run supabase/schema.sql again to restore its permissions.');
+  }
   if (name === 'AuthSessionMissingError' || status === 401 || status === 403 || code === 'PGRST301' || code === 'PGRST302' || /jwt/i.test(msg)) {
     return new RemoteError('auth', msg);
   }

@@ -1,8 +1,10 @@
-# Verse a Day (phase 1)
+# Verse a Day
 
 A static, installable web app: one poem or song a day, the story behind it, and
 a private journal. Plain HTML, CSS and ES modules. No build step, no framework.
-See `PLAN.md` for the full plan and the phase 1 spec.
+Live at https://imheet07-gif.github.io/verse-a-day/ (GitHub Pages, served from the
+`main` branch of `imheet07-gif/verse-a-day`; every push to `main` redeploys in about a minute).
+See `PLAN.md` for the full plan.
 
 ## Run locally
 
@@ -24,7 +26,7 @@ The service worker only registers over http(s). While developing, bump
     js/view-*.js            piece, journal, archive, month, welcome/empty/error screens
     js/lookup.js            Look up overlay (pieces and your journal)
     js/settings-ui.js       settings sheet, Sync & Backup, export and import
-    js/config.js            SUPABASE_URL / SUPABASE_ANON_KEY (empty in the repo) and syncConfigured
+    js/config.js            SUPABASE_URL / SUPABASE_ANON_KEY (public key only) and syncConfigured
     js/remote.js            Remote interface: SupabaseRemote (real) and FakeRemote (tests)
     js/sync.js              sync engine: merge rules, conflicts, retry. No DOM, runs under node
     js/sync-app.js          the page's engine instance, wired to the journal store
@@ -32,15 +34,42 @@ The service worker only registers over http(s). While developing, bump
     js/device.js            ?fake-remote / ?device switches (localhost only)
     supabase/schema.sql     table and row-level security policies, paste into Supabase
     tests/sync.test.mjs     node test of the merge rules
+    tools/daily-task.md     what the morning task does: steps, taste, copyright rules
+    tools/validate-entries.mjs  checks every entry and the index; run before committing
+    tools/update-index.mjs  rebuilds entries/index.json from the entry files
     js/prefs.js, fonts.js, icons.js, dialogs.js, util.js
     entries/index.json      [{date,type,title,author,lang}] newest first
-    entries/YYYY-MM-DD.json one per day (8 samples, 2026-11-03 to 2026-11-10)
+    entries/YYYY-MM-DD.json one per day (starts 2026-11-03)
     manifest.webmanifest, sw.js, icons/
 
 ## Copyright rule
 
 Only `text` is ever rendered as poem text, and only for `classic` entries
 (published before 1929). Modern poems and songs carry links only.
+
+## The daily task
+
+A Claude scheduled task, "Verse a Day: daily piece", runs every morning at 7:16 AM IST
+on the owner's Mac (while the Claude app is open; if it was closed, on next launch).
+It follows `tools/daily-task.md`: pull, pick the day's type from the weekday
+(Mon/Thu/Sun classic, Tue/Fri modern, Wed/Sat song), choose a piece not already in
+`entries/`, research it, write `entries/YYYY-MM-DD.json`, rebuild the index, run the
+validator, then commit and push `entries/` only. Its closing message, which is the
+morning notification, links to `https://imheet07-gif.github.io/verse-a-day/#/YYYY-MM-DD`.
+To change what it picks or how it writes, edit `tools/daily-task.md`; to change the
+time, edit the task in the Claude app's Scheduled list.
+
+### Add or fix an entry by hand
+
+1. Copy a recent file of the same type to `entries/YYYY-MM-DD.json` and edit it
+   (schema and rules are in `tools/daily-task.md`). The type must match the weekday.
+2. `node tools/update-index.mjs` rebuilds `entries/index.json`.
+3. `node tools/validate-entries.mjs` must print `OK`.
+4. `git add entries && git commit -m "Entry YYYY-MM-DD: Title (Author)" && git push`.
+
+The validator fails on: a type that breaks the weekday rotation, `text` on a modern
+or song entry, a classic dated 1929 or later, unknown fields, a repeated piece,
+missing links or sources, and an index that does not match the files.
 
 ## Turn on sync
 
@@ -77,8 +106,9 @@ offline, `.fail = true` a server error, `.confirmEmail = true` sign-up that need
 confirmation, `.expireSession()` an expired login, and `.rows('you@example.com')` shows what
 the fake server holds. Run the engine tests with `node tests/sync.test.mjs`.
 
-## Stubbed or not done
+## Not done
 
-- `SupabaseRemote` is written against the supabase-js v2 API but has never been run against a real project.
+- `SupabaseRemote` has not yet been confirmed signed-in against the real project on two devices.
 - Genius links are search URLs, not deep links.
-- The daily writer and deployment belong to later phases.
+- Fonts and the sync library are cached for offline use on the second visit, not the first
+  (the first visit installs the service worker). The app itself works offline after one visit.

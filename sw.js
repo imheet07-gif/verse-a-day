@@ -11,7 +11,7 @@
 //    they fall straight through to the network.
 // Bump VERSION whenever the shell files change.
 
-const VERSION = 'v2';
+const VERSION = 'v3';
 const SHELL = `vad-shell-${VERSION}`;
 const ENTRIES = `vad-entries-${VERSION}`;
 const FONTS = `vad-fonts-${VERSION}`;
