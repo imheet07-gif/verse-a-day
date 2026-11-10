@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-11",
+  "type": "song",
+  "title": "Tere Bina Zindagi Se",
+  "author": "Gulzar",
+  "year": 1975,
+  "lang": "hi",
+  "dir": "ltr",
+  "credits": "Lyrics Gulzar, music R. D. Burman, sung by Kishore Kumar and Lata Mangeshkar, from the film Aandhi (1975)",
+  "links": [
+    {
+      "label": "Search YouTube",
+      "url": "https://www.youtube.com/results?search_query=Tere+Bina+Zindagi+Se+Aandhi+1975"
+    },
+    {
+      "label": "Search Spotify",
+      "url": "https://open.spotify.com/search/Tere%20Bina%20Zindagi%20Se%20Aandhi%201975"
+    },
+    {
+      "label": "Search Genius",
+      "url": "https://genius.com/search?q=Tere%20Bina%20Zindagi%20Se%20Aandhi%201975"
+    }
+  ],
+  "who": "Gulzar (born 1934) is an Urdu poet, lyricist and film director who also directed Aandhi. R. D. Burman (1939 to 1994) composed the music, and the duet is sung by Kishore Kumar and Lata Mangeshkar. In the film it is picturised on Sanjeev Kumar and Suchitra Sen.",
+  "why": "It was written for Aandhi, released in February 1975. Wikipedia reports that the tune was first made as a Bengali Durga Puja song, which Gulzar liked and wrote his words around. The song was shot among the ruins of the Martand Sun Temple near Anantnag in Kashmir, and Gulzar was nominated for the Filmfare Best Lyricist award for it. I have no documented account of what moved him to write these particular words.",
+  "notice": "Listen to how the two voices answer each other rather than sing together. Notice how slowly the song moves, as if it has no wish to end. Notice the setting in the film, a ruined temple, and how it sits beside a song about longing.",
+  "prompts": [
+    "Who or what would you find hardest to imagine your days without, and why?",
+    "Is there a place that always brings a particular person back to you when you stand in it?"
+  ],
+  "sources": [
+    {
+      "title": "Aandhi (film) on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aandhi"
+    },
+    {
+      "title": "Gulzar on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gulzar"
+    },
+    {
+      "title": "R. D. Burman on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/R._D._Burman"
+    }
+  ]
+}
