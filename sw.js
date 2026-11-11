@@ -11,7 +11,7 @@
 //    they fall straight through to the network.
 // Bump VERSION whenever the shell files change.
 
-const VERSION = 'v3';
+const VERSION = 'v4';
 const SHELL = `vad-shell-${VERSION}`;
 const ENTRIES = `vad-entries-${VERSION}`;
 const FONTS = `vad-fonts-${VERSION}`;
@@ -124,6 +124,35 @@ async function staleWhileRevalidate(request, cacheName, { onFresh, ignoreSearch 
   return (await network) || Response.error();
 }
 
+async function indexNetworkFirst(request) {
+  const cache = await caches.open(ENTRIES);
+  const cached = await cache.match(request);
+  const net = fetch(request, { cache: 'no-cache' }).then(async (res) => {
+    if (res && res.ok) {
+      const old = cached ? await cached.clone().text() : null;
+      const text = await res.clone().text();
+      await cache.put(request, res.clone());
+      if (old !== null && old !== text) {
+        try {
+          await prefetchEntries(cache, JSON.parse(text));
+        } catch {
+          /* ignore */
+        }
+        await notifyClients({ type: 'entries-updated' });
+      }
+    }
+    return res;
+  });
+  net.catch(() => {}); // a late failure after the saved copy was served is not an error
+  if (!cached) return net.catch(() => Response.error());
+  const slow = new Promise((resolve) => setTimeout(() => resolve(null), 3000));
+  try {
+    return (await Promise.race([net, slow])) || cached;
+  } catch {
+    return cached;
+  }
+}
+
 async function cacheFirst(request, cacheName) {
   const cache = await caches.open(cacheName);
   const hit = await cache.match(request);
@@ -152,6 +181,12 @@ self.addEventListener('fetch', (event) => {
 
   if (isEntry(url)) {
     const isIndex = url.href === INDEX_URL;
+    if (isIndex) {
+      // The index names what exists today, so it must not be a visit behind:
+      // network first (short timeout), saved copy only when offline or slow.
+      event.respondWith(indexNetworkFirst(req));
+      return;
+    }
     event.respondWith(
       staleWhileRevalidate(req, ENTRIES, {
         onFresh: isIndex
