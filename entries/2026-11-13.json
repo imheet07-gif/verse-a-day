@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-13",
+  "type": "modern",
+  "title": "Love at First Sight",
+  "author": "Wisława Szymborska",
+  "lang": "en",
+  "dir": "ltr",
+  "links": [
+    {
+      "label": "Read the poem (poets.org)",
+      "url": "https://poets.org/poem/love-first-sight"
+    },
+    {
+      "label": "Hear it read (YouTube)",
+      "url": "https://www.youtube.com/results?search_query=Szymborska+Love+at+First+Sight+reading"
+    }
+  ],
+  "who": "Wisława Szymborska (1923 to 2012) was a Polish poet who lived much of her life in Kraków and received the Nobel Prize in Literature in 1996. The English version on poets.org is translated from Polish by Clare Cavanagh and Stanisław Barańczak.",
+  "why": "There is no documented account of what moved Szymborska to write this poem. Wikipedia reports that Krzysztof Kieślowski's film Three Colors: Red was inspired by it, and that the poem itself appears in the film Turn Left, Turn Right, starring Takeshi Kaneshiro and Gigi Leung.",
+  "notice": "Notice that the poem is not about the moment two people meet, but about all the times they almost met before it. Watch how small and ordinary the near-misses are. Notice the light, wry tone Szymborska keeps even while talking about fate.",
+  "prompts": [
+    "Is there someone in your life you now suspect you crossed paths with long before you actually met?",
+    "Do you think the people we love arrive by chance, or were we slowly being led toward them?"
+  ],
+  "sources": [
+    {
+      "title": "Love at First Sight on poets.org",
+      "url": "https://poets.org/poem/love-first-sight"
+    },
+    {
+      "title": "Wisława Szymborska on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wis%C5%82awa_Szymborska"
+    }
+  ]
+}
